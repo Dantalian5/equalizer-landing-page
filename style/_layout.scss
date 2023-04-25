@@ -1,0 +1,15 @@
+.container{
+    min-width: 20rem;
+    max-width: 90rem;
+    margin-inline: auto;
+}
+.flex{
+    display: flex;
+}
+.row{
+    flex-flow: row wrap;
+    &__clm{
+        flex: 1 1;
+    }
+}
+
