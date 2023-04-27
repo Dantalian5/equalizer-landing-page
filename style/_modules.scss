@@ -1,10 +1,104 @@
-.heading{
+.heading,
+.text{
+    font-family: $ff-plex;
 }
-.body{
+.heading{
+    font-weight: 700;
+}
+.text{
+    font-weight: 400;
 }
 .btn{
+    font-family: $ff-plex;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+    border-radius: .75rem;
+    &__icon{
+        width: 1.125rem;
+        color: inherit;
+    }
 }
-.navbar{ // Navbar module
+.logo{
+    width: 9.125rem;
+    height: fit-content;
 }
 .hero{
+    margin-top: 4rem;
+    &__title{
+        font-size: 2.5rem;
+        line-height: 120%;
+        letter-spacing: -0.01em;
+        margin-bottom: 1.25rem;
+    }
+    &__txt{
+        font-size: 1rem;
+        line-height: 160%;
+    }
+}
+.sctn{
+    padding-block: 2.5rem 4.3125rem;    
+    background: no-repeat url(../assets/bg-pattern-2.svg), $c-p-dark;
+    background-size: 17.5rem auto, auto;
+    background-position: center top;
+    border-radius: .75rem;
+    position: relative;
+    height: 37.5rem;
+    &__img{
+        position: absolute;
+        transform: translate( -50%, 0);
+        left: 50%;
+        top: -6.25rem;
+        width: 100%;
+        max-width: 13.0625rem;
+    }
+    &__card{
+        position: absolute;
+        transform: translate( -50%, 0);
+        left: 50%;
+        top: 380px;
+        width: 100%;
+        max-width: 27.875rem;
+        background: $c-p-orange;
+        border-radius: .75rem;
+        padding-inline: 2.25rem;
+        padding-block: 3rem;
+        &__title{
+            font-size: 2rem;
+            line-height: 125%;
+            color: $c-p-ghost;
+            margin-bottom: .75rem;
+        }
+        &__text{
+            font-size: 1.125rem;
+            line-height: 155%;
+            color: $c-p-ghost;
+            margin-bottom: 2.25rem;
+        }
+        &__price{
+            align-items: center;
+            font-size: 4.0625rem;
+            line-height: 80%;
+            color: $c-p-ghost;
+            &--small{
+                font-size: 1.25rem;
+                line-height: 160%;
+                letter-spacing: -0.1em;
+                margin-right: 1rem;
+            }
+            margin-bottom: 2rem;
+        }
+        &__btn1{
+            background: $c-p-dark;
+            color: $c-p-ghost;
+            margin-bottom: 1rem;
+        }
+        &__btn2{
+            background: $c-p-ghost;
+            color: $c-p-dark;
+        }
+    }
 }

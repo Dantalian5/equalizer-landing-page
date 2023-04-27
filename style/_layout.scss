@@ -1,7 +1,9 @@
 .container{
-    min-width: 20rem;
-    max-width: 90rem;
-    margin-inline: auto;
+    &--main{
+        min-width: 20rem;
+        max-width: 90rem;
+        margin-inline: auto;
+    }
 }
 .flex{
     display: flex;
@@ -12,4 +14,14 @@
         flex: 1 1;
     }
 }
-
+.header{
+    padding-inline: 1.5rem;
+    padding-block: 2.5rem 4.3125rem;
+    background: url(../assets/bg-main-mobile.png) no-repeat;
+    background-size: 150%;
+    background-position: left 10% bottom -5%;
+    margin-bottom: 4.3125rem;
+}
+.main{    
+    padding-block: 2.5rem 4.3125rem;
+}

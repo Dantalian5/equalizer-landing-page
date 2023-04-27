@@ -1,9 +1,14 @@
 //@ Import fonts
 
 //Fonts:
-
+$ff-plex: 'IBM Plex Sans', sans-serif;
 // Colors:
     // Primary
+    $c-p-cyan:hsla(177, 68%, 64%, 1);
+    $c-p-orange:hsla(12, 94%, 65%, 1);
+    $c-p-soft-orange:hsla(33, 100%, 70%, 1);
+    $c-p-ghost:hsla(20, 33%, 98%, 1);
+    $c-p-dark:hsla(244, 23%, 12%, 1);
     // Neutral
     $c-n-white: hsl(0,0%,100%);
     $c-n-black: hsl(0,0%,0%);
@@ -16,7 +21,7 @@
 body{ 
     min-height: 100vh;
     min-height: 100svh;
-    background-color: $c-n-white;    
+    background-color: $c-p-ghost;    
 }
 
 

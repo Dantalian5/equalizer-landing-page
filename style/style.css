@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font: inherit;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+svg {
+  color: inherit;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: hsl(20, 33%, 98%);
+}
+
+.container--main {
+  min-width: 20rem;
+  max-width: 90rem;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-flow: row wrap;
+}
+.row__clm {
+  flex: 1 1;
+}
+
+.header {
+  padding-inline: 1.5rem;
+  padding-block: 2.5rem 4.3125rem;
+  background: url(../assets/bg-main-mobile.png) no-repeat;
+  background-size: 150%;
+  background-position: left 10% bottom -5%;
+  margin-bottom: 4.3125rem;
+}
+
+.main {
+  padding-block: 2.5rem 4.3125rem;
+}
+
+.heading,
+.text {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.heading {
+  font-weight: 700;
+}
+
+.text {
+  font-weight: 400;
+}
+
+.btn {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  border-radius: 0.75rem;
+}
+.btn__icon {
+  width: 1.125rem;
+  color: inherit;
+}
+
+.logo {
+  width: 9.125rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hero {
+  margin-top: 4rem;
+}
+.hero__title {
+  font-size: 2.5rem;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+}
+.hero__txt {
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+.sctn {
+  padding-block: 2.5rem 4.3125rem;
+  background: no-repeat url(../assets/bg-pattern-2.svg), hsl(244, 23%, 12%);
+  background-size: 17.5rem auto, auto;
+  background-position: center top;
+  border-radius: 0.75rem;
+  position: relative;
+  height: 37.5rem;
+}
+.sctn__img {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: -6.25rem;
+  width: 100%;
+  max-width: 13.0625rem;
+}
+.sctn__card {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 380px;
+  width: 100%;
+  max-width: 27.875rem;
+  background: hsl(12, 94%, 65%);
+  border-radius: 0.75rem;
+  padding-inline: 2.25rem;
+  padding-block: 3rem;
+}
+.sctn__card__title {
+  font-size: 2rem;
+  line-height: 125%;
+  color: hsl(20, 33%, 98%);
+  margin-bottom: 0.75rem;
+}
+.sctn__card__text {
+  font-size: 1.125rem;
+  line-height: 155%;
+  color: hsl(20, 33%, 98%);
+  margin-bottom: 2.25rem;
+}
+.sctn__card__price {
+  align-items: center;
+  font-size: 4.0625rem;
+  line-height: 80%;
+  color: hsl(20, 33%, 98%);
+  margin-bottom: 2rem;
+}
+.sctn__card__price--small {
+  font-size: 1.25rem;
+  line-height: 160%;
+  letter-spacing: -0.1em;
+  margin-right: 1rem;
+}
+.sctn__card__btn1 {
+  background: hsl(244, 23%, 12%);
+  color: hsl(20, 33%, 98%);
+  margin-bottom: 1rem;
+}
+.sctn__card__btn2 {
+  background: hsl(20, 33%, 98%);
+  color: hsl(244, 23%, 12%);
+}/*# sourceMappingURL=style.css.map */
