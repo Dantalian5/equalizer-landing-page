@@ -84,12 +84,6 @@ input {
   outline: none;
 }
 
-body {
-  min-height: 100vh;
-  min-height: 100svh;
-  background-color: hsl(20, 33%, 98%);
-}
-
 .container--main {
   min-width: 20rem;
   max-width: 90rem;
@@ -107,17 +101,25 @@ body {
   flex: 1 1;
 }
 
-.header {
-  padding-inline: 1.5rem;
-  padding-block: 2.5rem 4.3125rem;
-  background: url(../assets/bg-main-mobile.png) no-repeat;
-  background-size: 150%;
-  background-position: left 10% bottom -5%;
-  margin-bottom: 4.3125rem;
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: url(../assets/bg-main-mobile.png) no-repeat, hsl(20, 33%, 98%);
+  background-size: 150%, auto;
+  background-position: left 5% top -40%;
 }
 
-.main {
-  padding-block: 2.5rem 4.3125rem;
+.header {
+  padding-inline: 1.5rem;
+  padding-block: 2.5rem 0;
+  margin-bottom: 4.25rem;
+}
+.header__logo {
+  margin-bottom: 4rem;
+}
+
+.footer {
+  padding-inline: 1.5rem;
 }
 
 .heading,
@@ -155,9 +157,6 @@ body {
   height: fit-content;
 }
 
-.hero {
-  margin-top: 4rem;
-}
 .hero__title {
   font-size: 2.5rem;
   line-height: 120%;
@@ -170,27 +169,27 @@ body {
 }
 
 .sctn {
-  padding-block: 2.5rem 4.3125rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.sctn::before {
+  content: "";
   background: no-repeat url(../assets/bg-pattern-2.svg), hsl(244, 23%, 12%);
   background-size: 17.5rem auto, auto;
   background-position: center top;
   border-radius: 0.75rem;
-  position: relative;
+  width: 100%;
   height: 37.5rem;
+  position: absolute;
+  top: 6.125rem;
+  z-index: -1;
 }
 .sctn__img {
-  position: absolute;
-  transform: translate(-50%, 0);
-  left: 50%;
-  top: -6.25rem;
-  width: 100%;
-  max-width: 13.0625rem;
+  width: 13.0625rem;
+  margin-inline: auto;
+  margin-bottom: 3rem;
 }
 .sctn__card {
-  position: absolute;
-  transform: translate(-50%, 0);
-  left: 50%;
-  top: 380px;
   width: 100%;
   max-width: 27.875rem;
   background: hsl(12, 94%, 65%);
@@ -230,5 +229,14 @@ body {
 }
 .sctn__card__btn2 {
   background: hsl(20, 33%, 98%);
+  color: hsl(244, 23%, 12%);
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+.footer__info__text {
+  font-size: 1rem;
+  line-height: 162%;
   color: hsl(244, 23%, 12%);
 }/*# sourceMappingURL=style.css.map */

@@ -14,14 +14,22 @@
         flex: 1 1;
     }
 }
+body{
+    min-height: 100vh;
+    min-height: 100svh;  
+    background: url(../assets/bg-main-mobile.png) no-repeat, $c-FCFAF9;
+    background-size: 150%, auto;
+    background-position: left 5% top -40%;
+}
 .header{
     padding-inline: 1.5rem;
-    padding-block: 2.5rem 4.3125rem;
-    background: url(../assets/bg-main-mobile.png) no-repeat;
-    background-size: 150%;
-    background-position: left 10% bottom -5%;
-    margin-bottom: 4.3125rem;
+    padding-block: 2.5rem 0;   
+    margin-bottom: 4.25rem;
+
+    &__logo{
+        margin-bottom: 4rem;
+    }
 }
-.main{    
-    padding-block: 2.5rem 4.3125rem;
+.footer{
+    padding-inline: 1.5rem;
 }

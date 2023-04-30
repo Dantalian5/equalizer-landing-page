@@ -27,7 +27,6 @@
     height: fit-content;
 }
 .hero{
-    margin-top: 4rem;
     &__title{
         font-size: 2.5rem;
         line-height: 120%;
@@ -40,49 +39,49 @@
     }
 }
 .sctn{
-    padding-block: 2.5rem 4.3125rem;    
-    background: no-repeat url(../assets/bg-pattern-2.svg), $c-p-dark;
-    background-size: 17.5rem auto, auto;
-    background-position: center top;
-    border-radius: .75rem;
-    position: relative;
-    height: 37.5rem;
-    &__img{
-        position: absolute;
-        transform: translate( -50%, 0);
-        left: 50%;
-        top: -6.25rem;
+    position: relative; 
+    margin-bottom: 4rem; 
+    &::before{  
+        content: '';
+        background: no-repeat url(../assets/bg-pattern-2.svg), $c-191826;
+        background-size: 17.5rem auto, auto;
+        background-position: center top;
+        border-radius: .75rem;
         width: 100%;
-        max-width: 13.0625rem;
+        height: 37.5rem;
+        position: absolute;
+        top: 6.125rem;
+        z-index: -1;
+    }    
+    &__img{
+        width: 13.0625rem;
+        margin-inline: auto;
+        margin-bottom: 3rem;
     }
     &__card{
-        position: absolute;
-        transform: translate( -50%, 0);
-        left: 50%;
-        top: 380px;
         width: 100%;
         max-width: 27.875rem;
-        background: $c-p-orange;
+        background: $c-FA7453;
         border-radius: .75rem;
         padding-inline: 2.25rem;
         padding-block: 3rem;
         &__title{
             font-size: 2rem;
             line-height: 125%;
-            color: $c-p-ghost;
+            color: $c-FCFAF9;
             margin-bottom: .75rem;
         }
         &__text{
             font-size: 1.125rem;
             line-height: 155%;
-            color: $c-p-ghost;
+            color: $c-FCFAF9;
             margin-bottom: 2.25rem;
         }
         &__price{
             align-items: center;
             font-size: 4.0625rem;
             line-height: 80%;
-            color: $c-p-ghost;
+            color: $c-FCFAF9;
             &--small{
                 font-size: 1.25rem;
                 line-height: 160%;
@@ -92,13 +91,27 @@
             margin-bottom: 2rem;
         }
         &__btn1{
-            background: $c-p-dark;
-            color: $c-p-ghost;
+            background: $c-191826;
+            color: $c-FCFAF9;
             margin-bottom: 1rem;
         }
         &__btn2{
-            background: $c-p-ghost;
-            color: $c-p-dark;
+            background: $c-FCFAF9;
+            color: $c-191826;
         }
     }
+}
+
+.footer{
+    &__logo{
+        margin-bottom: 2rem;        
+    }
+    &__info{
+        &__text{
+            font-size: 1rem;
+            line-height: 162%;
+            color: $c-191826;
+        }
+    }
+    
 }
