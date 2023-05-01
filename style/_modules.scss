@@ -41,6 +41,7 @@
 .sctn{
     position: relative;      
     height: fit-content; 
+    padding-block: .0313rem;
     &::before{  
         content: '';
         background: no-repeat url(../assets/bg-pattern-2.svg), $c-191826;

@@ -214,6 +214,7 @@ body {
   position: relative;
   height: -moz-fit-content;
   height: fit-content;
+  padding-block: 0.0313rem;
 }
 .sctn::before {
   content: "";
