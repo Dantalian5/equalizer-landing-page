@@ -1,0 +1,76 @@
+.container{
+    min-width: 20rem;
+    max-width: 90rem;
+    margin-inline: auto;
+}
+.flex{
+    display: flex;
+}
+body{
+    min-height: 100vh;
+    min-height: 100svh;  
+    background: url(../assets/bg-main-mobile.png) no-repeat, $c-FCFAF9;
+    background-size: 150% auto, auto;
+    background-position: left 5% top -20%;
+}
+.header{
+    padding-inline: max(1.5rem, 6%);
+    padding-block: 2.5rem 0;   
+    margin-bottom: 4.25rem;
+
+    &__logo{
+        margin-bottom: 4rem;
+    }
+}
+.main{
+    margin-bottom: 4rem;
+}
+.footer{
+    padding-inline: max(1.5rem, 6%);
+    margin-bottom: 5rem;
+}
+
+@media  (min-width: 43.75rem) {
+    body{ 
+        background: url(../assets/bg-pattern-1.svg) no-repeat, url(../assets/bg-main-tablet.png) no-repeat, $c-FCFAF9;
+        background-size: 16.6669rem 25rem, 180% auto;
+        background-position: right -2.2294rem top -2rem , left 75% top -60%; 
+    }
+    .header{
+        padding-inline: 5.07%;
+        padding-block: 3.875rem 0;   
+        margin-bottom: 6.9375rem;    
+        &__logo{
+            margin-bottom: 5.9375rem;
+        }
+    }
+    .main{
+        padding-inline: 4.29%;
+        margin-bottom: 5.4375rem;
+    }
+    .footer{
+        padding-inline: 4.29%;
+        margin-bottom: 5.3125rem;
+    }
+}
+@media  (min-width: 62.5rem) {
+    body{ 
+        background: url(../assets/bg-pattern-1.svg) no-repeat, url(../assets/bg-main-desktop.png) no-repeat, $c-FCFAF9;
+        background-size: 19.5rem 29.25rem, 130% auto;
+        background-position: left min(100%, calc(45rem + 50% - 9.75rem)) top -2.5rem , center top -18.75rem; 
+    }
+    .header{
+        padding-inline: min(10.3125rem, 11.5%);  
+        margin-bottom: 6.75rem;    
+        &__logo{
+            margin-bottom: 7.9375rem;
+        }
+    }
+    .main{
+        padding-inline: min(10.3125rem, 11.5%); 
+    }
+    .footer{
+        padding-inline: min(10.3125rem, 11.5%); 
+        margin-bottom: 5.6875rem;
+    }
+}
